@@ -1,0 +1,15 @@
+#!/bin/sh
+if test $1
+then 
+   maxmib=$1
+else 
+   maxmib=6000
+fi
+if test $2
+then 
+   intbytes=$2
+else 
+   intbytes=4
+fi
+gcc -O2 -o bin/tcfrontend src/tcfrontend.c
+gfortran -D MAXMIB=$maxmib -D INTBYTES=$intbytes -O2 -o bin/tcmain src/tcmain.F
