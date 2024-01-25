@@ -1,7 +1,12 @@
       PROGRAM TCMAIN
 C
 C TODD-COXETER COSET ENUMERATION USING HLT WITH LOOKAHEAD.
-C FOR gfortran COMPILATION. 
+C SEE J.J. Cannon, L.A. Dimino, G. Havas and J.M. Watson, 
+C Implementation and analysis of the Todd-Coxeter algorithm, 
+C Mathematics of Computation 27 (1973), 463-490.
+C
+C NOW DESIGNED FOR gfortran COMPILATION (ONLY). 
+C
 C COPYRIGHT L.H.SOICHER, 1982-2024.
 C
 C THE MAIN PROGRAM SETS UP THE MAIN MEMORY ARRAY MEM,
