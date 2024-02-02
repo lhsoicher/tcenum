@@ -1,5 +1,5 @@
-The tcenum Coset Enumeration Package (version 0.1)
-==================================================
+The tcenum Coset Enumeration Package (version 0.1.1)
+====================================================
 
 The tcenum package implements Todd-Coxeter coset enumeration using the
 HLT with lookahead strategy [1]. The package is based on programs developed
