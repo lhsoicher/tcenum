@@ -33,17 +33,14 @@ static int num[256];
 static int inv[105]; /* 105 == 2*(2*26)+1 */
 /* inv[i]=j if the inverse of generator i is generator j */
 
-static int instring(s,ch)
-char *s,ch;
+static int instring(char *s, char ch)
 {
 /* Returns  1  (i.e. true)  if ch is a character in the string s,
    and  0  (i.e. false)  if not. */
 return strchr(s,ch)!=NULL;
 }
 
-static void error(err,ch)
-errortype err;
-char ch;
+static void error(errortype err, char ch)
 {
 putchar('\n');
 switch (err) {
@@ -66,15 +63,13 @@ switch (err) {
 exit(EXIT_FAILURE);   /* error exit */
 }
 
-static void readexpr(f, e, valid, stop, ignore)
+static void readexpr(FILE *f, char* e, char* valid, char* stop, char* ignore)
 /* Reads an expression from file  *f  into the string  e,  up to and 
    including when a character in the string  stop  is read into  e
    and all the brackets are matched. 
 
    The valid characters are those in the the string  valid,  and the
    characters to be ignored are those in the string  ignore. */
-FILE *f;
-char *e,*valid,*stop,*ignore;
 {
 int j;
 int brackets;
@@ -103,9 +98,7 @@ do {
    } while (!instring(stop,ch) || brackets != 0);
 }
 
-static int value(e, front, back)
-char *e;
-int front, *back;
+static int value(char *e, int front, int *back)
 {
 /* Returns the value of the unsigned integer in e[front]...e[*back],
    where front is given, and e[*back+1] is the first non-digit in 
@@ -125,9 +118,7 @@ for (j = *back; j >= front; j--) {
 return val;
 }
 
-static void invert(w, front, back)
-int *w;
-int front, back;
+static void invert(int *w, int front, int back)
 {
 /* inverts the word w[front]...w[back] */
 int temp;
@@ -140,9 +131,7 @@ while (front <= back) {
     }
 }
 
-static void power(w, front, back, n)
-int *w;
-int front, *back, n;
+static void power(int *w, int front, int *back, int n)
 {
 /* Where n is a non-negative integer, this function 
    puts (w[front]...w[*back])^n into the word w[front]... 
@@ -164,13 +153,10 @@ for (i = 2; i <= n; i++) {
 *back = k;
 }
 
-static void writeword(f, w, front, back)
+static void writeword(FILE *f, int *w, int front, int back)
 /* Writes to file  *f  the word in w[front]...w[back] in the enum FORTRAN 
    coset enumerator format, starting with the length of the word, and
    then the word itself, with generators represented by integers 1,2,.... */
-FILE *f;
-int *w;
-int front, back;
 {
 int j;
 fprintf(f, "%d\n", back - front + 1);
@@ -181,11 +167,7 @@ for (j = front; j <= back; j++)
 static void commutate(char *e, int *last, int *w, int front, int *back);
 /* Prototype for function commutate. */ 
 
-static void process(e, last, w, front, back)
-char *e;
-int *last;
-int *w;
-int front,*back;
+static void process(char *e, int *last, int *w, int front, int *back)
 {
 /* Calculates the word (as a sequence of generator numbers)
    defined by the expression  e[*last+1],...,e[stophere],  where
@@ -230,9 +212,7 @@ if (isdigit(e[*last+1]))
 process(e, last, w, *back + 1, back);
 }
 
-static void commutate(e, last, w, front, back)
-char *e;
-int *last,*w,front,*back;
+static void commutate(char *e, int *last, int *w, int front, int *back)
 {
 /* Calculates the commutator [ w[front]...w[*back] , x ], 
    where  x  is the word or word sequence defined by  e[*last+1]...
@@ -255,8 +235,7 @@ if (e[*last] == ';' || e[*last] == ',')
    commutate(e, last, w, front, back);
 }
 
-static void mainproc(tcfein,tcfeout)
-FILE *tcfein, *tcfeout;
+static void mainproc(FILE *tcfein, FILE *tcfeout)
 {
 char e[maxexpr+1]; /* holds an input expression */
 int w[maxword+1],ww[maxword+1]; /* words */
@@ -407,9 +386,7 @@ for (j = 1; j <= ngen; j++) {
 fprintf(tcfeout, "%d\n", -2); /* end of relators */
 }
 
-int main(argc,argv)
-int argc;
-char *argv[];
+int main(int argc, char *argv[])
 {  
 if(argc != 3) {
    fprintf(stderr,"\n*** error: usage is 'tcfrontend <infile> <outfile>'\n");
