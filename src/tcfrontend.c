@@ -316,6 +316,8 @@ if (e[0] != '.') {
          if (!instring(gens,e[j]))
             error(syntax, e[j]);
 	 y = num[e[j]];
+         if (x==y)
+            error(syntax, e[j]);
 	 a[x][y] = v;
 	 a[y][x] = v;
 	 x = y;
