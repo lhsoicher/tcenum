@@ -63,7 +63,7 @@ switch (err) {
 exit(EXIT_FAILURE);   /* error exit */
 }
 
-static void readexpr(FILE *f, char* e, char* valid, char* stop, char* ignore)
+static void readexpr(FILE *f, char *e, char *valid, char *stop, char *ignore)
 /* Reads an expression from file  *f  into the string  e,  up to and 
    including when a character in the string  stop  is read into  e
    and all the brackets are matched. 
