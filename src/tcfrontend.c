@@ -20,7 +20,8 @@
 #define maxword 10000
 
 typedef enum {
-  badmaxexpr, badmaxword, illchar, illgen, syntax 
+  badmaxexpr, badmaxword, illchar, illgen, syntax, 
+  coxrelwithself, repeatedcoxrelpair
 } errortype;
 
 static FILE *tcfein, *tcfeout;
@@ -58,6 +59,12 @@ switch (err) {
       break;
    case syntax:
       fprintf(stderr,"*** syntax error - did not expect '%c'\n", ch);
+      break;
+   case coxrelwithself:
+      fprintf(stderr,"*** Coxeter relation for '%c' with itself\n", ch);
+      break;
+   case repeatedcoxrelpair:
+      fprintf(stderr,"*** repeated Coxeter relation pair\n");
       break;
    }
 exit(EXIT_FAILURE);   /* error exit */
@@ -298,12 +305,12 @@ strcpy(stop,".");
 strcat(valid,stop); 
 readexpr(tcfein, e, valid, stop, ignore); 
 if (e[0] != '.') {
-   /* process Coxeter relators */
+   /* process Coxeter relations */
    for (i = 1; i <= ngen; i++) {
       for (j = 1; j <= ngen; j++)
-         a[i][j] = 2;
+         a[i][j] = -1;  /* signifying that a[i][j] is not (yet) set */
       }
-   /* Use the Praeger-Soicher book format for Coxeter relators. */
+   /* Use the Praeger-Soicher book format for Coxeter relations. */
    j = 0;
    do {
       /* process a path in the Coxeter graph */
@@ -317,13 +324,22 @@ if (e[0] != '.') {
             error(syntax, e[j]);
 	 y = num[e[j]];
          if (x==y)
-            error(syntax, e[j]);
+            error(coxrelwithself, e[j]);
+         if (a[x][y] != -1)
+            error(repeatedcoxrelpair, e[j]);
 	 a[x][y] = v;
 	 a[y][x] = v;
 	 x = y;
          }
       j++;
       } while (e[j] != '.');
+   /* set the default of 2 for unset pairs */
+   for (i = 1; i <= ngen; i++) {
+      for (j = 1; j <= ngen; j++)
+         if(i != j)
+            if(a[i][j] == -1)
+               a[i][j] = 2;
+      }
    min = 0;
    do {
       flag = 1;
