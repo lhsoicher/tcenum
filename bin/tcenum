@@ -9,9 +9,9 @@ echo "tcenum <presentation_file> <maxc> <ilooka> <result_file>"
 echo "tcenum <presentation_file> <maxc> <ilooka> <result_file> <permgens_file>"
 exit
 fi
-tcfrontend_in=$(mktemp --tmpdir tcfrontend_in.XXXXXXXXXX)
+tcfrontend_in=$(mktemp -p/tmp tcfrontend_in.XXXXXXXXXX)
 cp $1 $tcfrontend_in
-tcfrontend_out=$(mktemp --tmpdir tcfrontend_out.XXXXXXXXXX)
+tcfrontend_out=$(mktemp -p/tmp tcfrontend_out.XXXXXXXXXX)
 tcfrontend $tcfrontend_in $tcfrontend_out
 if [ $? -ne 0 ] 
 then 
@@ -36,15 +36,15 @@ outsw=1
 else
 outsw=0
 fi
-tcmain_in=$(mktemp --tmpdir tcmain_in.XXXXXXXXXX)
+tcmain_in=$(mktemp -p/tmp tcmain_in.XXXXXXXXXX)
 echo "$ilooka $outsw 2 $maxc" > $tcmain_in
 cat $tcfrontend_out >> $tcmain_in
-tcmain_out=$(mktemp --tmpdir tcmain_out.XXXXXXXXXX)
+tcmain_out=$(mktemp -p/tmp tcmain_out.XXXXXXXXXX)
 if [ $outsw -eq 0 ]
 then 
 tcmain_permgens=""
 else 
-tcmain_permgens=$(mktemp --tmpdir tcmain_permgens.XXXXXXXXXX)
+tcmain_permgens=$(mktemp -p/tmp tcmain_permgens.XXXXXXXXXX)
 fi
 tcmain $tcmain_in $tcmain_out $tcmain_permgens
 if [ $? -ne 0 ] 
