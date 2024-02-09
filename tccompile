@@ -1,4 +1,5 @@
 #!/bin/sh
+# this script is obsolete
 if test $1
 then 
    maxmib=$1
