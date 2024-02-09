@@ -1,4 +1,4 @@
-#!/bin/sh
+export PATH=.:$PATH
 resfile=$(mktemp -p/tmp tctestres.XXXXXXXXX)
 bin/tcenum tests/$gr 0 0 $resfile >/dev/null 2>&1
 
