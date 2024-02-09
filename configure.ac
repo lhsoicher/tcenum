@@ -2,6 +2,7 @@ AC_INIT([tcenum], [0.1])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects])
 dnl AC_CONFIG_FILES([bin/tcenum], [chmod +x bin/tcenum])
+AC_REQUIRE_AUX_FILE([tap-driver.sh])
 AC_PROG_CC
 AC_PROG_F77([gfortran egfortran])
 
