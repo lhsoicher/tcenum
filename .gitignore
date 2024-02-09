@@ -1,5 +1,5 @@
-/bin/tcfrontend
-/bin/tcmain
+tcfrontend
+tcmain
 *~
 *.log
 .deps/*
@@ -13,3 +13,4 @@ build-aux/
 config.status
 configure
 src/.dirstamp
+*.trs
