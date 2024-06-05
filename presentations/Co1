@@ -1,0 +1,20 @@
+abcdefgh..a,b,c,d,e,f,g.
+a3b5c3d a4e3c c4f3d e6f b4g4f a3h4b f6h.
+a=(cf)2,e=(bg)2,b=(ef)3,d=(bh)2=(aeh)3,(adfh)3,(baefg)3,(cef)7,
+(abe)3,(abc)5,(bcd)5,(bce)5,(acde)4,(bcfh)6,(abce)8,
+(adefcefgh)39.
+
+A presentation for Co1 for enumeration over Co2.
+
+Removing the relator (adefcefgh)39 gives .0 = 2Co1.
+
+Some redundant relators (with or without 1=(adefcefgh)39): 
+(abe)3,(abc)5,(bcd)5,(bce)5,(acde)4,(bcfh)6,(abce)8.
+
+References:
+[1] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
+University of Cambridge, 1985.
+
+[2] L.H. Soicher, Presentations for some groups related to Co1, 
+In: "Computers in Algebra", M.C. Tangora, ed., Marcel Dekker, 
+New York, 1988, pp. 151-154.
