@@ -1,12 +1,12 @@
-abcdef..a,b,c,d,f.
-a3b5c3d a4e3c c4f3d e6f.
-a=(cf)2,b=(ef)3,(abe)3,(bce)5,(bcef)4,(acde)4,
-(abc)5,(bcd)5,(abce)8.
+abcdefg..a,b,c,d,e,f.
+a3b5c3d a4e3c c4f3d e6f b4g4f.
+a=(cf)2,e=(bg)2,b=(ef)3,(baefg)3,(bcef)4,(acde)4,
+(abe)3,(abc)5,(bcd)5,(bce)5,(abce)8.
 
-A presentation for M23 for enumeration over M11.
+A presentation for M24 for enumeration over M23.
 
 Some redundant relators: 
-(abc)5,(bcd)5,(abce)8.
+(abe)3,(abc)5,(bcd)5,(bce)5,(abce)8.
 
 References:
 [1] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
