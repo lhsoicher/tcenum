@@ -1,14 +1,14 @@
 abcdef..a,b,c,d,f.
 a3b5c3d a4e3c c4f3d e6f.
-a=(cf)2,b=(ef)3,(abe)3,(bce)5,(cef)7,(acde)4,
-(abc)5,(bcd)5.
+a=(cf)2,b=(ef)3,(abe)3,(bce)5,(cef)7,
+(abc)5,(bcd)5,(acde)4.
 
 A presentation for McL for enumeration over M11.
 
 Replacing the relator (cef)7 by (cef)21 gives 3McL.
 
 Some redundant relators: 
-(abc)5,(bcd)5.
+(abc)5,(bcd)5,(acde)4.
 
 References:
 [1] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
