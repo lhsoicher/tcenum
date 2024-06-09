@@ -1,0 +1,24 @@
+abcdeft..a,b,c,d,f,t.
+a3b5c3d a4e3c c4f3d e6f e0t.
+a=(cf)2,b=(ef)3,(abe)3,(bce)5,
+[e,t]=[e,cabcfdbecebdaeb],
+(cef)7,
+d=(et)4,(abc)5,(bcd)5,(acde)4.
+
+A presentation for McL:2 for enumeration over M11 x 2.
+
+Removing the relator (cef)7 gives 3McL:2.
+
+Some redundant relators (with or without (cef)7): 
+d=(et)4,(abc)5,(bcd)5,(acde)4.
+
+References:
+[1] C. Parker, Generators and relations for the Lyons sporadic simple group,
+Archiv der Mathematik 78 (2002), 97-103.
+
+[2] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
+University of Cambridge, 1985.
+
+[3] L.H. Soicher, Presentations for some groups related to Co1, 
+In: "Computers in Algebra", M.C. Tangora, ed., Marcel Dekker, 
+New York, 1988, pp. 151-154.
