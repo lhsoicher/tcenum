@@ -1,0 +1,22 @@
+abcdfh..a,b,c,d,f.
+a3b5c3d c4f3d a3h4b f6h.
+a=(cf)2,d=(bh)2,(adfh)3,
+(bcfh)6,
+(abc)5,(bcd)5.
+
+A presentation for M12 for enumeration over M11.
+
+Removing the relator (bcfh)6 gives 2M12.
+
+Some redundant relators (with or without (bcfh)6): 
+(abc)5,(bcd)5.
+
+This is joint work with A.J.E. Ryba.
+
+References:
+[1] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
+University of Cambridge, 1985.
+
+[2] L.H. Soicher, Presentations for some groups related to Co1, 
+In: "Computers in Algebra", M.C. Tangora, ed., Marcel Dekker, 
+New York, 1988, pp. 151-154.
