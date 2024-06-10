@@ -1,0 +1,15 @@
+abcdefgh..a,b,c,d,e,f,g.
+a3b3c8d3e3f3g3h.
+a=(cd)4,(bcde)8,
+(bcdcdefgh)13.
+
+A presentation for Suz:2 for enumeration over G2(4):2.
+
+Removing the relator (bcdcdefgh)13 gives 3Suz:2.
+
+References:
+[1] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
+University of Cambridge, 1985.
+
+[2] L.H. Soicher, Presentations for Conway's group Co1, Mathematical
+Proceedings of the Cambridge Philosophical Society 102 (1987), 1-3.
