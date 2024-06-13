@@ -1,0 +1,15 @@
+abcde..a,b,c,d.
+a3b5c3d5e.
+a=(cde)5,(abc)5,
+(bcd)5.
+
+Presentation for Janko's group J1 for enumeration over PSL2(11).
+
+A redundant relator: 
+(bcd)5.
+
+This presentation is due to J.H. Conway and R.A. Parker.
+
+Reference:
+[1] L.H. Soicher, Presentations of some finite groups with applications
+to the O'Nan simple group, Journal of Algebra 108 (1987), 310-316.

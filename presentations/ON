@@ -1,0 +1,16 @@
+abcdefg..a,b,c,d,e.
+a3b5c3d5e c4f3d c4g3d f4g.
+a=(cf)2=(cg)2=(cde)5,e=(fg)2,
+(dfg)5,
+(abc)5,(bcd)5,(def)5,(deg)5.
+
+Presentation for ON for enumeration over J1.
+
+Replacing the relator (dfg)5 by [c,(dfg)5] gives 3ON.
+
+Some redundant relators:
+(abc)5,(bcd)5,(def)5,(deg)5.
+
+Reference:
+[1] L.H. Soicher, Presentations of some finite groups with applications
+to the O'Nan simple group, Journal of Algebra 108 (1987), 310-316.
