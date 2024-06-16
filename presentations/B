@@ -1,0 +1,21 @@
+abcdefghjkl..a,b,c,d,f,g,h,j,k,l.
+a3b3c3d3e a3f3g3h a3j3k3l.
+(abcafgajk)10,
+(cbafjkl)9,
+(cbafghj)9.
+
+Presentation for the Baby Monster group B for enumeration (in theory)
+over 2(twisted(E6(2)).
+
+Removing the relator (cbafghj)9 gives 2B.
+
+References:
+[1] J.H. Conway, S.P. Norton and L.H. Soicher, The Bimonster, the group
+Y555, and the projective plane of order 3, In: "Computers in Algebra",
+M.C. Tangora, ed., Marcel Dekker, New York, 1988, pp. 27-50.
+
+[2] A.A. Ivanov, Presenting the Baby Monster, Journal of Algebra 163
+(1994), 88-108.
+
+[3] A.A. Ivanov, Y-groups via transitive extension, Journal of Algebra 218 
+(1999), 412-435.
