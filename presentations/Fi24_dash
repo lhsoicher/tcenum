@@ -1,0 +1,21 @@
+abcdefghwjk.w.a,b,c,d,e,f,g,h,j,k.
+a3b3c3d3e a3f3g3h3w a3j3k.
+w3,
+(abcafgajk)10,
+(cbafghj)9,
+(afghwabcdeajk)17.
+
+Presentation for the simple group Fi24' for enumeration over Fi23.
+
+Removing the relator  (afghwabcdeajk)17  gives 3Fi24'.
+
+References:
+[1] J.H. Conway, S.P. Norton and L.H. Soicher, The Bimonster, the group
+Y555, and the projective plane of order 3, In: "Computers in Algebra",
+M.C. Tangora, ed., Marcel Dekker, New York, 1988, pp. 27-50.
+
+[2] J.H. Conway and A.D. Pritchard, Hyperbolic reflections for
+the Bimonster and 3Fi24, In: "Groups, Combinatorics and Geometry",
+M.W. Liebeck and J. Saxl, eds, Cambridge University Press, Cambridge,
+1992, pp. 24-45.
+
