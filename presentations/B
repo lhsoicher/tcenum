@@ -7,7 +7,26 @@ a3b3c3d3e a3f3g3h a3j3k3l.
 Presentation for the Baby Monster group B for enumeration (in theory)
 over 2(twisted(E6(2)).
 
-Removing the relator (cbafghj)9 gives 2B.
+From this presentation, the following presentation for B using just 
+45 relations can easily be deduced:
+
+abcdefghjkl..a,b,c,d,f,g,h,j,k,l.
+.
+(ed)3,[e,c],[e,bafgh],[e,bajkl],
+(dc)3,[d,b],[d,afgh],[d,ajkl],
+(cb)3,[c,l],[c,kjafgh],
+(ba)3,[b,j],[b,kl],[b,f],[b,gh],
+(lk)3,[l,j],[l,afgh],
+(kj)3,[k,a],[k,fgh],
+(ja)3,[j,f],[j,gh],
+(af)3,[a,g],[a,h],
+(fg)3,[f,h],
+(gh)3,
+(abcafgajk)10,
+(cbafjkl)9,
+(cbafghj)9.
+
+For both presentations, removing the relator (cbafghj)9 gives 2B.
 
 References:
 [1] J.H. Conway, S.P. Norton and L.H. Soicher, The Bimonster, the group
