@@ -5,6 +5,23 @@ a3b3c3d3e a3f3g3h a3j3k.
 
 Presentation for the Fischer group Fi23 for enumeration over 2Fi22.
 
+From this presentation, the following presentation for Fi23 using just 
+40 relations can easily be deduced:
+
+abcdefghjk..a,b,c,d,f,g,h,j,k.
+.
+(ed)3,[e,c],[e,bafgh],[e,bajk],
+(dc)3,[d,b],[d,afgh],[d,ajk],
+(cb)3,[c,k],[c,jafgh],
+(ba)3,[b,j],[b,k],[b,f],[b,gh],
+(kj)3,[k,a],[k,fgh],
+(ja)3,[j,f],[j,gh],
+(af)3,[a,g],[a,h],
+(fg)3,[f,h],
+(gh)3,
+(abcafgajk)10,
+(cbafghj)9.
+
 Reference:
 [1] J.H. Conway, S.P. Norton and L.H. Soicher, The Bimonster, the group
 Y555, and the projective plane of order 3, In: "Computers in Algebra",
