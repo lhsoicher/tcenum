@@ -194,8 +194,8 @@ their automorphism groups.
 
 From the information in this directory, we see that every sporadic simple
 group has a presentation with at most 48 relations. Since every (sporadic
-or otherwise) simple group is 2-generated, it follows by Lemma 2.3 of
-[GKKL] that every sporadic simple group has a presentation with two
+or otherwise) finite simple group is 2-generated, it follows by Lemma 2.3 
+of [GKKL] that every sporadic simple group has a presentation with two
 generators and at most 50 relations. Such a result was said in [GKKL]
 to be in preparation by me. Note that the result also holds for the Tits
 simple group T, should you wish to consider T to be a sporadic simple
