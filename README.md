@@ -29,16 +29,18 @@ Installing tcenum
 ------------------
 
 Unpack the archive file in a chosen directory, move to the tcenum
-subdirectory and run `tccompile`. The format for this command is
+and run
 
-     tccompile [ <maxmib> [ <intbytes> ] ]
+    ./configure
+    make
+    make check # few basic tests
+    sudo make install # or just "make install"
 
-where `<maxmib>` is the maximum store in MiB available for the coset
-enumeration (the default is 6000) and `<intbytes>` is the size in bytes
-of an entry in the coset table (must be 4 or 8, the default is 4).
+To install from the git repository, you first of all will need to run
 
-After running tccompile the executables will be in the directory 
-tcenum/bin, which you should add to your PATH variable.
+    ./bootstrap
+
+which requires autotools (autoconf and automake)
 
 Running tcenum
 --------------
