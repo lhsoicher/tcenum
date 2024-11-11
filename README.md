@@ -28,8 +28,9 @@ this use.
 Installing tcenum
 ------------------
 
-Unpack the archive file in a chosen directory, move to the tcenum
-subdirectory and run `tccompile`. The format for this command is
+Unpack the archive file in a chosen directory, move to the subdirectory
+created for tcenum (say `tcenum` or `tcenum-x.y.z`) and run
+`tccompile`. The format for this command is
 
      tccompile [ <maxmib> [ <intbytes> ] ]
 
@@ -37,8 +38,9 @@ where `<maxmib>` is the maximum store in MiB available for the coset
 enumeration (the default is 6000) and `<intbytes>` is the size in bytes
 of an entry in the coset table (must be 4 or 8, the default is 4).
 
-After running tccompile the executables will be in the directory 
-tcenum/bin, which you should add to your PATH variable.
+After running `tccompile` the executables will be in the bin subdirectory
+of the directory created for tcenum. You should add this bin directory
+to your PATH variable.
 
 Running tcenum
 --------------
