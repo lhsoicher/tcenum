@@ -224,5 +224,3 @@ University of Cambridge, 1985. <https://doi.org/10.17863/CAM.110463>
 [AFGR] R. Wilson et al., ATLAS of Finite Group Representations -
 Version 3, <https://brauer.maths.qmul.ac.uk/Atlas/v3/>
 
-
--Leonard Soicher, July 2024.
