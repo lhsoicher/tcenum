@@ -1,0 +1,19 @@
+abcdefg..a,b,c,d,e,f.
+a5b3c8d3e b3f4g3b.
+a=(cd)4=(fg)2,(abcf)5,(abcg)5,((bcdcd)5e)3,
+(bfg)5,
+(abc)5,(abf)5,(abg)5.
+
+A presentation for the Suzuki group Suz for enumeration over G2(4).
+
+Removing the relator (bfg)5 gives 3Suz.
+
+Some redundant relators (with or without (bfg)5):
+(abc)5,(abf)5,(abg)5.
+
+References:
+[1] L.H. Soicher, Presentations of Some Finite Groups, PhD Thesis,
+University of Cambridge, 1985.
+
+[2] L.H. Soicher, Presentations for Conway's group Co1, Mathematical
+Proceedings of the Cambridge Philosophical Society 102 (1987), 1-3.

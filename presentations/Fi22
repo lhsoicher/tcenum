@@ -1,0 +1,15 @@
+abcdfghjk..a,b,c,f,g,h,j,k.
+a3b3c3d a3f3g3h a3j3k.
+(abcafgajk)10,
+(cbafghj)9,
+(gfabcdj)9.
+
+Presentation for the Fischer group Fi22 for enumeration over O7(3).
+
+Removing the relator  (gfabcdj)9  gives 2Fi22.
+
+Reference:
+[1] J.H. Conway, S.P. Norton and L.H. Soicher, The Bimonster, the group
+Y555, and the projective plane of order 3, In: "Computers in Algebra",
+M.C. Tangora, ed., Marcel Dekker, New York, 1988, pp. 27-50.
+
